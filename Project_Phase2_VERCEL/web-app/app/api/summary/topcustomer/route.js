@@ -1,0 +1,6 @@
+import toysRepo from "../../../repo/toysrepo.js"
+
+export async function GET(request) {
+    const topCustomer = await toysRepo.getTopCustomer(); 
+    return Response.json(topCustomer);
+}

@@ -3,6 +3,9 @@ const nextConfig = {};
 
 
 export default {
-    target: 'serverless'
+    experimental: {
+      serverless: true,
+    },
+    // Other configuration options can go here if needed
   };
   
